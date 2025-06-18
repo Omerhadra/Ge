@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>روابط عمر حضرة</title>
+  <title>Omar Hadraa's Links</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -25,7 +25,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
       margin-top: 30px;
     }
 
@@ -35,7 +35,7 @@
       height: 70px;
       border-radius: 50%;
       overflow: hidden;
-      transition: transform 0.4s ease;
+      animation: float 3s ease-in-out infinite;
     }
 
     .icon-link img {
@@ -43,10 +43,6 @@
       height: 100%;
       object-fit: cover;
       display: block;
-    }
-
-    .icon-link:hover {
-      transform: scale(1.2);
     }
 
     .button-group {
@@ -91,11 +87,16 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
   </style>
 </head>
 <body>
 
-  <h1>روابط عمر حضرة</h1>
+  <h1>Omar Hadraa's Social Links</h1>
 
   <div class="container">
     <a href="https://www.instagram.com/mr.hadraa" class="icon-link" target="_blank">
@@ -119,17 +120,17 @@
   </div>
 
   <div class="button-group">
-    <a href="https://x.com/omerhadraa?s=21" class="button" target="_blank">تويتر</a>
-    <a href="https://www.facebook.com/share/1BpY1LAYTz/?mibextid=wwXIfr" class="button" target="_blank">فيسبوك</a>
-    <a href="https://www.instagram.com/mr.hadraa" class="button" target="_blank">إنستغرام</a>
-    <a href="https://www.linkedin.com/in/omar-hadra-ba8496367" class="button" target="_blank">لينكدإن</a>
-    <a href="https://snapchat.com/t/nZz5E7VE" class="button" target="_blank">سناب شات</a>
-    <a href="https://www.threads.net/@mr.hadraa" class="button" target="_blank">ثريدز</a>
-    <a href="mailto:omarhadraa@gmail.com" class="button" target="_blank">البريد الإلكتروني</a>
+    <a href="https://x.com/omerhadraa?s=21" class="button" target="_blank">Twitter</a>
+    <a href="https://www.facebook.com/share/1BpY1LAYTz/?mibextid=wwXIfr" class="button" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/mr.hadraa" class="button" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/omar-hadra-ba8496367" class="button" target="_blank">LinkedIn</a>
+    <a href="https://snapchat.com/t/nZz5E7VE" class="button" target="_blank">Snapchat</a>
+    <a href="https://www.threads.net/@mr.hadraa" class="button" target="_blank">Threads</a>
+    <a href="mailto:omarhadraa@gmail.com" class="button" target="_blank">Email</a>
   </div>
 
   <div class="about">
-    <p>أنا عمر حضرة، خريج هندسة برمجيات من جامعة العلوم والتقانة. شغوف بالتقنية، وأسعى دائمًا لتطوير مهاراتي في البرمجة، تطوير الويب، والابتكار الرقمي.</p>
+    <p>I’m Omar Hadraa, a Software Engineering graduate from the University of Science and Technology. I’m passionate about technology and constantly improving my skills in programming, web development, and digital innovation.</p>
   </div>
 
 </body>
