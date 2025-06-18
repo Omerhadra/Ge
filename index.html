@@ -2,135 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Omar Hadraa's Links</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar Hadraa Links</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: 'Cairo', sans-serif;
-      background: #f2f2f2;
-      color: #333;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 30px;
-      font-size: 32px;
-      animation: fadeInDown 1.5s ease;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .icon-link {
-      display: block;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      overflow: hidden;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    .icon-link img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .button-group {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .button {
-      background: transparent;
-      border: 2px solid #333;
-      padding: 10px 25px;
-      border-radius: 25px;
-      color: #333;
-      text-decoration: none;
-      transition: 0.3s ease;
-      width: fit-content;
-    }
-
-    .button:hover {
-      background-color: #333;
+      background-color: #000;
       color: #fff;
     }
-
-    .about {
-      margin: 40px 20px 60px;
-      font-size: 18px;
-      animation: fadeInUp 2s ease;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+    .intro {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #111;
     }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .intro h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .intro p {
+      font-size: 16px;
+      color: #ccc;
     }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+    .card {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    .content h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .content a {
+      background-color: white;
+      color: black;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .content a:hover {
+      background-color: #ddd;
+    }
+    .footer {
+      padding: 40px 20px;
+      background-color: #111;
+      text-align: center;
+    }
+    .footer a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 25px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .footer a:hover {
+      background-color: #ddd;
+    }
+    @media (max-width: 768px) {
+      .card {
+        height: 90vh;
+      }
+      .content h1 {
+        font-size: 28px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Omar Hadraa's Social Links</h1>
-
-  <div class="container">
-    <a href="https://www.instagram.com/mr.hadraa" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/bwb8jJLQ/438-FE2-D2-BDC9-490-D-969-A-BD9-A9-F5296-ED.jpg" alt="Instagram" />
-    </a>
-    <a href="https://www.facebook.com/share/1BpY1LAYTz/?mibextid=wwXIfr" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/66mN2Rmr/IMG-0863.png" alt="Facebook" />
-    </a>
-    <a href="https://www.linkedin.com/in/omar-hadra-ba8496367" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/ZqcGTyNy/IMG-0240.jpg" alt="LinkedIn" />
-    </a>
-    <a href="https://snapchat.com/t/nZz5E7VE" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/kMZkXC2w/IMG-0592.jpg" alt="Snapchat" />
-    </a>
-    <a href="https://x.com/omerhadraa?s=21" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/k5gmRcqy/IMG-9955.jpg" alt="Twitter" />
-    </a>
-    <a href="https://www.threads.net/@mr.hadraa" class="icon-link" target="_blank">
-      <img src="https://i.postimg.cc/BZKGFt9R/IMG-1054.jpg" alt="Threads" />
-    </a>
+  <div class="intro">
+    <h2>Welcome!</h2>
+    <p>Hi, I’m Omar Hadraa — a passionate Software Engineering graduate with a love for tech, coding, and digital innovation.</p>
   </div>
 
-  <div class="button-group">
-    <a href="https://x.com/omerhadraa?s=21" class="button" target="_blank">Twitter</a>
-    <a href="https://www.facebook.com/share/1BpY1LAYTz/?mibextid=wwXIfr" class="button" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/mr.hadraa" class="button" target="_blank">Instagram</a>
-    <a href="https://www.linkedin.com/in/omar-hadra-ba8496367" class="button" target="_blank">LinkedIn</a>
-    <a href="https://snapchat.com/t/nZz5E7VE" class="button" target="_blank">Snapchat</a>
-    <a href="https://www.threads.net/@mr.hadraa" class="button" target="_blank">Threads</a>
-    <a href="mailto:omarhadraa@gmail.com" class="button" target="_blank">Email</a>
+  <div class="card" style="background-image: url('https://i.postimg.cc/k5gmRcqy/IMG-9955.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Follow me on Twitter</h3>
+      <h1>TWITTER</h1>
+      <a href="https://x.com/omerhadraa?s=21" target="_blank">CLICK NOW</a>
+    </div>
   </div>
 
-  <div class="about">
-    <p>I’m Omar Hadraa, a Software Engineering graduate from the University of Science and Technology. I’m passionate about technology and constantly improving my skills in programming, web development, and digital innovation.</p>
+  <div class="card" style="background-image: url('https://i.postimg.cc/66mN2Rmr/IMG-0863.png');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Follow me on Facebook</h3>
+      <h1>FACEBOOK</h1>
+      <a href="https://www.facebook.com/share/1BpY1LAYTz/?mibextid=wwXIfr" target="_blank">CLICK NOW</a>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('https://i.postimg.cc/bwb8jJLQ/438-FE2-D2-BDC9-490-D-969-A-BD9-A9-F5296-ED.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Follow me on Instagram</h3>
+      <h1>INSTAGRAM</h1>
+      <a href="https://www.instagram.com/mr.hadraa" target="_blank">CLICK NOW</a>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('https://i.postimg.cc/ZqcGTyNy/IMG-0240.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Connect on LinkedIn</h3>
+      <h1>LINKEDIN</h1>
+      <a href="https://www.linkedin.com/in/omar-hadra-ba8496367" target="_blank">CLICK NOW</a>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('https://i.postimg.cc/kMZkXC2w/IMG-0592.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Follow me on Snapchat</h3>
+      <h1>SNAPCHAT</h1>
+      <a href="https://snapchat.com/t/nZz5E7VE" target="_blank">CLICK NOW</a>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('https://i.postimg.cc/BZKGFt9R/IMG-1054.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h3>Follow me on Threads</h3>
+      <h1>THREADS</h1>
+      <a href="https://www.threads.net/@mr.hadraa" target="_blank">CLICK NOW</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="mailto:omarhadraa@gmail.com">Email Me</a>
+    <a href="https://wa.me/249XXXXXXXXX">Contact on WhatsApp</a>
   </div>
 
 </body>
